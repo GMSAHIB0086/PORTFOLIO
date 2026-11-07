@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAHEEL | Video Editor & Motion Designer</title>
+<meta name="description" content="Raheel - Video editor and motion designer portfolio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="bar"></div>
+
+<!-- ============ HEADER ============ -->
+<header id="top">
+  <div class="container nav">
+    <a href="#hero" class="logo">
+      <b>R</b>
+      <div>RAHEEL.<small>VIDEO EDITOR • MOTION • COLOR</small></div>
+    </a>
+    <nav class="links" id="links">
+      <a href="#about">About</a>
+      <a href="#videos">Videos</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section id="hero">
+  <div class="orb a"></div><div class="orb b"></div>
+  <div class="container hero-grid">
+    <div>
+      <div class="pill"><i></i> Open for Freelance Projects</div>
+      <div class="tag">RAHEEL • VIDEO PORTFOLIO</div>
+      <h1 class="hero-name">PORT<span class="grad">FOLIO</span></h1>
+      <p class="hero-role">Video Editor &amp; Motion Designer</p>
+
+      <div class="chips">
+        <div class="chip glass"><strong>YouTube &amp; Long Form</strong><span>16:9 • High Retention</span></div>
+        <div class="chip glass"><strong>DaVinci Color Science</strong><span>Node-Based Film Emulation</span></div>
+        <div class="chip glass"><strong>Dynamic Flow Edits</strong><span>Velocity &amp; Rhythm</span></div>
+      </div>
+
+      <div class="cta">
+        <a href="#videos" class="btn btn-primary">▶ Watch Videos</a>
+        <a href="#gallery" class="btn btn-ghost">View Photo Stacks</a>
+      </div>
+    </div>
+
+    <!-- animated editing-timeline decoration -->
+    <div class="tl glass" aria-hidden="true">
+      <div class="tl-head"><b>● REC</b><span>00:00:12:08</span></div>
+      <div class="track"><i style="--w:3;--c:#7c5cff"></i><i style="--w:2;--c:#22d3ee"></i><i style="--w:4;--c:#a78bfa"></i><i style="--w:2;--c:#38bdf8"></i></div>
+      <div class="track"><i style="--w:2;--c:#22d3ee"></i><i style="--w:4;--c:#7c5cff"></i><i style="--w:3;--c:#6366f1"></i></div>
+      <div class="track"><i style="--w:5;--c:#4338ca"></i><i style="--w:3;--c:#0ea5e9"></i><i style="--w:2;--c:#8b5cf6"></i></div>
+      <div class="wave" id="wave"></div>
+      <div class="playhead"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div>
+    <span>DAVINCI RESOLVE</span><span>PREMIERE PRO</span><span>AFTER EFFECTS</span><span>MOTION GRAPHICS</span><span>COLOR GRADING</span><span>SOUND DESIGN</span>
+    <span>DAVINCI RESOLVE</span><span>PREMIERE PRO</span><span>AFTER EFFECTS</span><span>MOTION GRAPHICS</span><span>COLOR GRADING</span><span>SOUND DESIGN</span>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="container">
+    <div class="eyebrow reveal">01 // About</div>
+    <h2 class="title reveal">ABOUT <span class="grad">ME</span></h2>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Hi, I'm <strong>Raheel</strong> — a dedicated <strong>Video Editor and Motion Designer</strong>.</p>
+        <p>My work is built on <strong>sharp visual aesthetics, precise rhythmic pacing and relentless dynamism</strong> — everything that makes a story hit harder.</p>
+        <p>By pairing <strong>velocity curves</strong> with <strong>motion design and DaVinci Resolve color science</strong>, every cut is engineered to hook viewers in seconds and keep them watching.</p>
+      </div>
+
+      <div class="stack reveal">
+        <div class="card"><small>Primary NLE Suites</small><h4>DaVinci Resolve Studio &amp; Premiere Pro</h4><p>Editing, color, and final delivery.</p></div>
+        <div class="card"><small>Motion &amp; VFX</small><h4>Adobe After Effects</h4><p>Dynamic typography, transitions, and 2.5D animation.</p></div>
+        <div class="stats">
+          <div class="card stat"><b>YT</b><span>LONG FORM</span></div>
+          <div class="card stat"><b>ACES</b><span>COLOR PIPELINE</span></div>
+          <div class="card stat"><b>4K</b><span>MASTERS</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEOS ============ -->
+<section id="videos" style="background:var(--bg-2)">
+  <div class="container">
+    <div class="eyebrow reveal">02 // Timeline Selects</div>
+    <h2 class="title reveal">FEATURED <span class="grad">VIDEOS</span></h2>
+    <p class="sub reveal">Click any card to play the full video.</p>
+    <div class="video-grid" id="videoGrid"></div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery">
+  <div class="container">
+    <div class="eyebrow reveal">03 // Graded Stills &amp; Stacks</div>
+    <h2 class="title reveal">PHOTO <span class="grad">GALLERY</span></h2>
+
+    <div class="gallery-wrap">
+      <p class="hint">Single tap to view full • Double tap to send to back</p>
+      <div class="deck" id="deck"></div>
+      <div class="controls">
+        <button id="prev">← PREV</button>
+        <span id="count">1 / 1</span>
+        <button id="next">NEXT →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" style="background:var(--bg-2)">
+  <div class="container">
+    <div class="eyebrow reveal">04 // Start a Collaboration</div>
+    <h2 class="title reveal">GET IN <span class="grad">TOUCH</span></h2>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="sub" style="margin-top:0">Need a dynamic flow edit, a long-form YouTube cut, or a master color grade? Send over your project details, deadlines and footage links.</p>
+
+        <div class="mailbox">
+          <div><small>DIRECT EMAIL</small><span id="emailText"></span></div>
+          <button id="copyBtn">Copy</button>
+        </div>
+
+        <div class="social">
+          <a id="igLink" class="btn btn-ghost" target="_blank" rel="noopener">Instagram Profile</a>
+          <a id="waLink" class="btn btn-ghost" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+      </div>
+
+      <form id="form" class="glass reveal">
+        <input type="text" id="fName" placeholder="Your Name" required>
+        <input type="email" id="fEmail" placeholder="Email Address" required>
+        <input type="url" id="fLink" placeholder="Footage / Brief Link (Optional)">
+        <textarea id="fMsg" placeholder="Project Scope / Details" required></textarea>
+        <button type="submit" class="btn btn-primary" style="justify-content:center">Send Message to Raheel</button>
+        <div class="ok" id="ok">Message ready! Your email app should open — just press send.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>© <span id="year"></span> RAHEEL. ALL RIGHTS RESERVED.</footer>
+
+<!-- ============ VIDEO MODAL ============ -->
+<div class="modal" id="videoModal">
+  <div class="modal-box">
+    <button class="x" data-close>✕</button>
+    <video id="player" controls playsinline></video>
+    <h4 id="vTitle"></h4>
+  </div>
+</div>
+
+<!-- ============ IMAGE LIGHTBOX ============ -->
+<div class="modal" id="imgModal">
+  <div class="modal-box">
+    <button class="x" data-close>✕</button>
+    <img class="full" id="fullImg" alt="">
+    <span class="note">Click anywhere to dismiss</span>
+  </div>
+</div>
+
+<script>
+/* =====================================================
+   1) अपनी जानकारी (यहाँ से बदल सकते हैं)
+   ===================================================== */
+const CONFIG = {
+  email:     "raheelahmed65yt@gmail.com",
+  instagram: "https://www.instagram.com/",   // <-- अपना Instagram प्रोफ़ाइल लिंक यहाँ डालें
+  whatsapp:  "0315876158",                  // देश कोड के साथ, बिना + के
+  waText:    "Hi Raheel, I'd like to discuss a video project"
+};
+
+/* =====================================================
+   2) अपने वीडियो यहाँ जोड़ें (सारे कार्ड 16:9 लंबे हैं)
+   src    = वीडियो फ़ाइल / लिंक (mp4)
+   poster = थंबनेल इमेज का लिंक (16:9 साइज़ बेहतर)
+   ===================================================== */
+const VIDEOS = [
+  { title:"DIGNITO JAPANESE ART TITLE INTRO", tag:"Category / Type", dur:"0:00", format:"Video / 16:9",
+    desc:"Stylized Japanese woodblock and parchment art sequence featuring textured ink reveals, animated samurai silhouettes...",
+    tools:"Adobe After Effects • 16:9",
+    src:"./video/1.mp4", poster:"./poster/1.png" },
+
+  { title:"NEWPORT BEACH WATERFRONT TOUR", tag:"Category / Type", dur:"0:00", format:"Video / 16:9",
+    desc:"Dynamic luxury home walkthrough featuring kinetic typography, seamless warp whip transitions, high-energy...",
+    tools:"DaVinci Resolve • 9:16",
+    src:"./video/2.mp4", poster:"./poster/2.png" },
+
+  { title:"MOTION GRAPHICS SHOWREEL", tag:"Category / Type", dur:"0:00", format:"Video / 16:9",
+    desc:"Multi-layered visual sequence featuring 2.5D parallax photo cutouts, animated vintage cartography, typography paper...",
+    tools:"Premiere Pro • 16:9",
+    src:"video/3.mov", poster:"./poster/3.png" },
+
+  { title:"THE COVES AT WESLACO TOWNHOMES", tag:"Category / Type", dur:"0:00", format:"Video / 16:9",
+    desc:"High-energy real estate listing promo with kinetic offer callouts, speed ramps, smooth whip transitions, and clean...",
+    tools:"Adobe After Effects • 16:9",
+    src:"video/4.mp4", poster:"./poster/4.png" },
+
+  { title:"PURPLE 7 SALON OFFERS PROMO", tag:"Category / Type", dur:"0:00", format:"Video / 16:9",
+    desc:"High-end salon promotional walkthrough featuring luminous neon text treatments, smooth light-leak transitions, elegant...",
+    tools:"DaVinci Resolve • 16:9",
+    src:"video/5.mp4", poster:"./poster/5.png" },
+
+  { title:"ASTIN MARTIN DB11", tag:"Category / Type", dur:"0:00", format:"Video / 16:9",
+    desc:"Dynamic kinetic typography, store HUD overlays, ASTON MARTIN DB11, and animated motion graphics.",
+    tools:"Premiere Pro • 9:16",
+    src:"video/6.mp4.webm", poster:"./poster/6.png" }
+];
+
+/* =====================================================
+   3) गैलरी की फ़ोटो यहाँ जोड़ें
+   ===================================================== */
+const PHOTOS = [
+  "https://lh3.googleusercontent.com/d/14tsuZiw98b9OLDjervap0SS4CDodvVbQ",
+  "https://lh3.googleusercontent.com/d/1-5QEipq5GlSyn5K15da-A2RM3yJNJVmV",
+  "https://lh3.googleusercontent.com/d/1zh1F_FZgKd-T0cbnc-XG34OkaQKBGDR8",
+  "https://lh3.googleusercontent.com/d/1LtlQhu9c2nbQVM_BBKXnvU1FKgB4BD6w",
+  "https://lh3.googleusercontent.com/d/1k39hCEM4TLCX6WBOEzgVQ8WeFkkZoTif",
+  "https://lh3.googleusercontent.com/d/1bCas_8L2MaA1NYeLAkH6qQMfTBrSWV0n"
+];
+
+/* =====================================================
+   नीचे का कोड बदलने की ज़रूरत नहीं
+   ===================================================== */
+const $ = s => document.querySelector(s);
+
+/* ---- contact links ---- */
+$("#emailText").textContent = CONFIG.email;
+$("#igLink").href = CONFIG.instagram;
+$("#waLink").href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(CONFIG.waText)}`;
+$("#year").textContent = new Date().getFullYear();
+
+$("#copyBtn").onclick = async e => {
+  try { await navigator.clipboard.writeText(CONFIG.email); e.target.textContent = "Copied ✓"; }
+  catch { e.target.textContent = "Press Ctrl+C"; }
+  setTimeout(() => e.target.textContent = "Copy", 1800);
+};
+
+/* ---- contact form → opens email app ---- */
+$("#form").addEventListener("submit", e => {
+  e.preventDefault();
+  const body = `Name: ${$("#fName").value}\nEmail: ${$("#fEmail").value}\nLink: ${$("#fLink").value || "-"}\n\n${$("#fMsg").value}`;
+  const url = `mailto:${CONFIG.email}?subject=${encodeURIComponent("Project inquiry from " + $("#fName").value)}&body=${encodeURIComponent(body)}`;
+  $("#ok").classList.add("on");
+  window.location.href = url;
+  e.target.reset();
+});
+
+/* ---- header, progress bar, mobile menu ---- */
+const header = $("header"), bar = $("#bar");
+addEventListener("scroll", () => {
+  header.classList.toggle("scrolled", scrollY > 30);
+  const h = document.documentElement.scrollHeight - innerHeight;
+  bar.style.width = (h > 0 ? scrollY / h * 100 : 0) + "%";
+});
+$("#menuBtn").onclick = () => $("#links").classList.toggle("open");
+document.querySelectorAll("#links a").forEach(a => a.onclick = () => $("#links").classList.remove("open"));
+
+/* ---- hero waveform ---- */
+$("#wave").innerHTML = Array.from({ length: 34 }, (_, i) =>
+  `<s style="--d:${(i * 0.07).toFixed(2)}s;height:${30 + Math.abs(Math.sin(i * 1.3)) * 70}%"></s>`).join("");
+
+/* ---- scroll reveal ---- */
+const io = new IntersectionObserver(entries => {
+  entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add("show"); io.unobserve(en.target); } });
+}, { threshold: .12 });
+
+/* ---- videos grid ---- */
+$("#videoGrid").innerHTML = VIDEOS.map((v, i) => `
+  <article class="vcard reveal" data-i="${i}">
+    <div class="thumb">
+      <img src="${v.poster}" alt="${v.title}" loading="lazy">
+      <span class="badge">${v.format}</span>
+      <span class="dur">${v.dur}</span>
+      <div class="play"><span>▶</span></div>
+    </div>
+    <div class="vbody">
+      <small>${v.tag}</small>
+      <h3>${v.title}</h3>
+      <p>${v.desc}</p>
+      <em>${v.tools} &nbsp;•&nbsp; Watch ▸</em>
+    </div>
+  </article>`).join("");
+
+const vModal = $("#videoModal"), player = $("#player");
+document.querySelectorAll(".vcard").forEach(c => c.onclick = () => {
+  const v = VIDEOS[c.dataset.i];
+  player.src = v.src; player.poster = v.poster;
+  $("#vTitle").textContent = v.title;
+  vModal.classList.add("open");
+  player.play().catch(() => {});
+});
+function closeVideo(){ vModal.classList.remove("open"); player.pause(); player.removeAttribute("src"); player.load(); }
+
+/* ---- gallery stack ---- */
+const deck = $("#deck");
+let order = PHOTOS.map((_, i) => i);
+
+deck.innerHTML = PHOTOS.map((src, i) =>
+  `<div class="photo" data-i="${i}"><img src="${src}" alt="Photo ${i+1}" loading="lazy"></div>`).join("");
+const cards = [...deck.children];
+
+function layout(){
+  order.forEach((idx, pos) => {
+    const c = cards[idx];
+    const side = pos % 2 ? 1 : -1;
+    c.style.zIndex = PHOTOS.length - pos + 1;
+    c.style.opacity = pos < 4 ? 1 : 0;
+    c.style.pointerEvents = pos === 0 ? "auto" : "none";
+    c.style.filter = pos === 0 ? "none" : `brightness(${1 - pos * .15})`;
+    c.style.transform = pos === 0
+      ? "translate(0,0) rotate(0) scale(1)"
+      : `translate(${side * pos * 14}px,${pos * 10}px) rotate(${side * pos * 3}deg) scale(${1 - pos * .04})`;
+  });
+  $("#count").textContent = `${order[0] + 1} / ${PHOTOS.length}`;
+}
+const next = () => { order.push(order.shift()); layout(); };
+const prev = () => { order.unshift(order.pop()); layout(); };
+$("#next").onclick = next;
+$("#prev").onclick = prev;
+
+/* single tap = open, double tap = send to back */
+let tapTimer = null;
+deck.addEventListener("click", e => {
+  const card = e.target.closest(".photo");
+  if (!card || +card.dataset.i !== order[0]) return;
+  if (tapTimer) { clearTimeout(tapTimer); tapTimer = null; next(); return; }
+  tapTimer = setTimeout(() => {
+    tapTimer = null;
+    $("#fullImg").src = PHOTOS[order[0]];
+    $("#imgModal").classList.add("open");
+  }, 260);
+});
+
+/* swipe support */
+let sx = null;
+deck.addEventListener("touchstart", e => sx = e.touches[0].clientX, { passive: true });
+deck.addEventListener("touchend", e => {
+  if (sx === null) return;
+  const dx = e.changedTouches[0].clientX - sx;
+  if (Math.abs(dx) > 60) { dx < 0 ? next() : prev(); clearTimeout(tapTimer); tapTimer = null; }
+  sx = null;
+});
+layout();
+
+/* ---- modal close handlers ---- */
+document.querySelectorAll(".modal").forEach(m => m.addEventListener("click", e => {
+  if (m.id === "videoModal") { if (e.target === m || e.target.dataset.close !== undefined) closeVideo(); }
+  else m.classList.remove("open");
+}));
+addEventListener("keydown", e => {
+  if (e.key === "Escape") { closeVideo(); $("#imgModal").classList.remove("open"); }
+  if (!$("#imgModal").classList.contains("open") && !vModal.classList.contains("open")) {
+    if (e.key === "ArrowRight") next();
+    if (e.key === "ArrowLeft") prev();
+  }
+});
+
+document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+</script>
+</body>
+</html>
